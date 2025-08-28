@@ -4,7 +4,7 @@
 
     <head>
 
-        <body bgcolor="#d9c675">
+        <body bgcolor="#d9c675"> 
 
         <title> Calculadora </title> 
 
@@ -14,7 +14,7 @@
 
         <form style="text-align: center;" action="" method="GET">
 
-            <form action="processar.php" method="post">
+            <!-- <form action="processar.php" method="post"> -->
                 <label for="nome">Número:</label>
                 <input type="number" value="num1" name="num1">
                 <label for="nome">Número:</label>
@@ -22,10 +22,9 @@
                 <br>
                 <br>
                 <input type="submit" value="Calcular">
-            </form>
+            <!-- </form> -->
 
             <p style="text-align: center;">
-
                 <lABEL> Escolha uma Operação:</lABEL>
                 <br>
                 <br>
@@ -39,8 +38,12 @@
                 </select>
 
             </p>
-
-            <?php
+        </form>
+        
+<?php
+       
+        if($_SERVER["REQUEST_METHOD"] == "GET"){
+                if (isset($_GET['num1']) && isset($_GET['num2']) && isset($_GET['operacao'])){       
 
                 $x = $_GET['num1'];
 
@@ -48,14 +51,24 @@
 
                 $z = $_GET['operacao'];
 
-                
+                //Soma
+                function Soma ($x, $y){
+                    return  $x + $y;
+                 }
 
-            ?>
 
+                 
+                 //Resultados
+               
+ 
+                   if ($z == 'soma'){
+                        echo "<h1> O resultado da soma é: " .$x. " + " .$y. " = " . Soma($x, $y) . "</h1>";
+                    }
+                }
+            }
+            ?> <p>
 
-            <p>
-
-                echo "<h2> Total: " .operacao. "";
+               
 
             </p>
 
