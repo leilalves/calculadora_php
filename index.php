@@ -10,7 +10,8 @@
 
     <body>
 
-        <h1 style="text-align: center;"> Calculadora </h1>
+        <h1 style="text-align: center;"> Calculadora 2.0 </h1>
+        <!-- Gabi Felix -->
 
         <form style="text-align: center;" action="" method="GET">
 
