@@ -77,6 +77,11 @@
                     return $x % $y;
                 }
 
+                //Exponenciação
+                function exponenciacao ($x, $y) {
+                    return $x ** $y;
+                }
+
 
                  
                  //Resultados
@@ -100,6 +105,9 @@
 
                     if ($z == 'modulo'){
                         echo "<h1> O resultado da módulo é: " .$x. " % " .$y. " = " . módulo($x, $y) . "</h1>";
+                    }
+                    if ($z == 'exponenciacao'){
+                        echo "<h1> O resultado da exponenciação é: " .$x. " ** " .$y. "=" . exponenciacao($x, $y) . "<h1>";
                     }
 
 
