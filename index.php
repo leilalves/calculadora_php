@@ -10,8 +10,8 @@
 
     <body>
 
-        <h1 style="text-align: center;"> Calculadora 2.0 </h1>
-        <!-- Gabi Felix -->
+        <h1 style="text-align: center;"> Calculadora </h1>
+        
 
         <form style="text-align: center;" action="" method="GET">
 
@@ -57,6 +57,16 @@
                     return  $x + $y;
                  }
 
+                 //Subtração
+                function subtração ($x, $y){
+                    return $x - $y;
+                }
+
+                //Módulo
+                function módulo ($x, $y){
+                    return $x % $y;
+                }
+
 
                  
                  //Resultados
@@ -65,6 +75,16 @@
                    if ($z == 'soma'){
                         echo "<h1> O resultado da soma é: " .$x. " + " .$y. " = " . Soma($x, $y) . "</h1>";
                     }
+
+                    if ($z == 'subtracao'){
+                        echo "<h1> O resultado da subtração é: " .$x. " - " .$y. " = " . subtração($x, $y) . "</h1>";
+                    }
+
+                    if ($z == 'modulo'){
+                        echo "<h1> O resultado da módulo é: " .$x. " % " .$y. " = " . módulo($x, $y) . "</h1>";
+                    }
+
+
                 }
             }
             ?> <p>
