@@ -67,6 +67,11 @@
                     return $x * $y;
                 }
 
+                //Divisão
+                function divisão ($x, $y){
+                    return $x / $y;
+                }
+
                 //Módulo
                 function módulo ($x, $y){
                     return $x % $y;
@@ -87,6 +92,10 @@
 
                     if ($z == 'multiplicacao'){
                         echo "<h1> O resultado da mutiplicação é: " .$x. " * " .$y. " = " . mutiplicação($x, $y) . "</h1>";
+                    }
+
+                    if ($z == 'divisao'){
+                        echo "<h1> O resultado da divisão é: " .$x. " / " .$y. " = " . divisão($x, $y) . "</h1>";
                     }
 
                     if ($z == 'modulo'){
